@@ -1,7 +1,4 @@
-﻿//list all the programms currently running on the computer
-//using the Process class
-#pragma warning disable CA1416 // Rethrow to preserve stack details
-#pragma warning restore CS8600 // Rethrow to preserve stack details
+﻿#pragma warning disable CA1416 // Rethrow to preserve stack details
 
 using System.Diagnostics;
 
@@ -21,9 +18,6 @@ Console.WriteLine("Currently there are " + process.Length + " programms running 
 Console.WriteLine("List of all the programms currently running on the computer");
 Console.WriteLine("-------------------------------------------------------");
 
-//write out all the programms currently running on the computer
-
-//loop through all the programms and store them in the process array
 
 foreach (Process p in process)
 {
@@ -38,25 +32,14 @@ foreach (Process p in process)
 }
 
 
-//get cpu ussage in percentage
-
-
 
 Console.WriteLine("-------------------------------------------------------");
 
-//ask the user to enter the name of the programm he/she wants to exit
-
-
-//find the programm the user wants to exit
-
-
 var Exit = false;
-
 
 while (!Exit)
 {
     Console.WriteLine("Enter the name of the programm you want to exit");
-    //make string not null
     string programm = Console.ReadLine();
     var found = false;
     try
